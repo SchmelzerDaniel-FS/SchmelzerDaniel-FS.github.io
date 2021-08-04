@@ -7,6 +7,10 @@ h1{
     color: darkblue;
 
 }
+h2{
+    text-align: center;
+    color: darkblue;
+}
 .navBar {
     background-color: #333;
     overflow: hidden;
