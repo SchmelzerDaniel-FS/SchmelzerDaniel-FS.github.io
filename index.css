@@ -11,6 +11,10 @@ h2{
     text-align: center;
     color: darkblue;
 }
+a{
+    text-align: center;
+    color: blue;
+}
 .navBar {
     background-color: #333;
     overflow: hidden;
