@@ -1,21 +1,25 @@
-var x = 0;
+var x = 1;
 var array = Array();
 
 function add_element_to_array()
 {
  array[x] = document.getElementById("text1").value;
- alert("Thank you " + array[x] + ". You have been added at index " + x);
+ if (array[x] == ""){
+     alert("Do not leave this blank!", "")
+ }else if (array[x]!= ""){
+ alert("Thank you " + array[x] + ". You have been added the Guest Book");
  x++;
  document.getElementById("text1").value = "";
+ }
 }
 
 function display_array()
 {
    var e = "<hr/>";   
     
-   for (var y=0; y<array.length; y++)
+   for (var y=1; y<array.length; y++)
    {
-     e += "Element " + y + " = " + array[y] + "<br/>";
+     e += "Guest " + y + ": " + array[y] + "<br/>";
    }
    document.getElementById("Result").innerHTML = e;
 }
