@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="index.css" rel="stylesheet">
+        
     </head>
     <body>
         <img href="banner" src="images/logo_copy.png" alt="guttenberg_banner" height="200px" width="1100">  
@@ -15,6 +16,23 @@
             <a href="about.html">About</a>
         </div>
         <hr>
+        <button class="openBtn" id="openBtn">Guest Book</button>
+            <div id="bookModal" class="modal">
+                <div class="modal-content">
+                    <div class="modalHeader">
+                    <span class="close">&times;</span>
+                    <h2>Guest Book</h2>
+                    <hr>
+                </div>
+                <div class="modalBody">
+                    <p.modalP>Please enter your name:</p>
+                    <input type="text" id="text1"></input>
+                    <input type="button" id="button1" value="Add" onclick="add_element_to_array();"></input>
+                    <input type="button" id="button2" value="Display" onclick="display_array();"></input>
+                    <div id="Result"></div> 
+                </div>
+                </div>
+            </div>
         <h1>Welcome to<br>Guttenberg Iowa</h1>
         <p><img src="images/modern_gberg.png" alt="Guttenberg Today" height="300px" width="300px"><br><br>
         Guttenberg Iowa is a small river town located between two bluffs in the Mississippi River Valley. The town is rich in German culture and is the largest town in Clayton County Iowa with a population of about 1,900. This small town has a friendly laid-back atmosphere, where visitors can enjoy life at a slower pace. </p>
@@ -43,6 +61,7 @@
         <footer>
             Developed from UsefulBroom HQ
         </footer>
+        <script type="text/javascript" src="guestBook.js"></script>
     </body>
 </html>
 
