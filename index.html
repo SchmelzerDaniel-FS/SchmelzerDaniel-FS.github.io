@@ -8,7 +8,7 @@
         
     </head>
     <body>
-        <img href="banner" src="images/logo_copy.png" alt="guttenberg_banner" height="200px" width="1100">  
+        <img href="banner" src="images/logo_copy.png" alt="guttenberg_banner" height="200px" width="auto">  
         <hr>
         <div class="navBar">
             <a class="active" href="index.html">Home</a>
@@ -36,25 +36,77 @@
                 </div>
                 </div>
             </div>
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+            <button onclick="toTopFunction()" id="toTop" title="Go to top">Back To Top</button>
         <h1 id="homeH">Welcome to<br>Guttenberg Iowa</h1>
-        <p><img src="images/modern_gberg.png" alt="Guttenberg Today" height="300px" width="300px"><br><br>
-        Guttenberg Iowa is a small river town located between two bluffs in the Mississippi River Valley. The town is rich in German culture and is the largest town in Clayton County Iowa with a population of about 1,900. This small town has a friendly laid-back atmosphere, where visitors can enjoy life at a slower pace. </p>
+        <table>
+            <tr>
+                <th><img src="images/modern_gberg.png" alt="Guttenberg Today" height="auto" width="400px"></th>
+                <th><p id="homeP">Guttenberg Iowa is a small river town located between two bluffs in the Mississippi River Valley. The town is rich in German culture and is the largest town in Clayton County Iowa with a population of about 1,900. This small town has a friendly laid-back atmosphere, where visitors can enjoy life at a slower pace. </p></th>
+            </tr>
+        </table>
         <hr id="historyH">
         <h2 >History of<br>Guttenberg</h2>
-        <p><img id="image" src="images/historicalMap.jpg" alt="Early map of Guttenberg" height="300px" width="400px"><br><br>
+        <p id="historyP1"><img id="image" src="images/historicalMap.jpg" alt="Early map of Guttenberg" height="300px" width="400px"><br><br>
         Prairie La Porte, meaning "the door to the prairie," was the first name given to Guttenberg by French explorers in 1673. The Guttenberg area was a site of Sac and Fox campgrounds until 1823. The Louisiana Purchase of 1803 transferred ownership to the United States and the Black Hawk Purchase of 1833 finally opened the area for legal settlement.<br><br>
-        Guttenberg's riverfront location was pivotal in its early commercial development. The town first served as a focal point for westward settlement and as an early governmental and administrative center. It was the early location of the county seat from 1838-1843. Guttenberg served as a supply center for the general area until the Civil War, when railroads and an interior road system combined to detract from Guttenberg's role as a market center.<br><br>The earliest businesses included general supply stores, blacksmith, wagon shops, and hotels. The loss of the county seat in 1843 slowed growth and the population declined. Economic revival began in 1845 with the influx of hundreds of German immigrants under the auspices of the Western Settlement Society of Cincinnati and continued with the development of the lead mining industry along Miners Creek.<br><br>
-        <img id="image" src="images/historical_Lock_10.jpg" alt="Lock and Dam No. 10" height="300px" width="500px">
-        <img id="image" src="images/historical_Streets.jpg" alt="Historical Street View" height="300px" width="500px"></p>
-        <p>Guttenberg incorporated in 1851. The influence of the German population was best indicated by the construction during the period between 1845 and 1865 for over one hundred stone buildings. The bluff limestone was easily obtained and good, local clay and lime for construction was available. Four large riverside warehouses opened and a large flour mill, stores, and hotels appeared during this period. The steamboat trade deposited merchandise and picked up farm produce, milled flour and lead ore.<br><br>
-        <img class="image" src="images/button_Factory.jpg" alt="Button Factory" height="300px" width="300px"></p>
+        Guttenberg's riverfront location was pivotal in its early commercial development. The town first served as a focal point for westward settlement and as an early governmental and administrative center. It was the early location of the county seat from 1838-1843. Guttenberg served as a supply center for the general area until the Civil War, when railroads and an interior road system combined to detract from Guttenberg's role as a market center.<br><br>The earliest businesses included general supply stores, blacksmith, wagon shops, and hotels. The loss of the county seat in 1843 slowed growth and the population declined. Economic revival began in 1845 with the influx of hundreds of German immigrants under the auspices of the Western Settlement Society of Cincinnati and continued with the development of the lead mining industry along Miners Creek.</p>
+        <div class="historicalSlideshow">
+            <div class="historicalSlides">
+                <div class="numbertext">1 / 9</div>
+                <img src="images/historical_Lock_10.jpg" alt="Lock and Dam No. 10" style="width:100%">
+            </div>
+            <div class="historicalSlides">
+                <div class="numbertext">2 / 9</div>
+                <img src="images/historical_Streets.jpg" alt="Historical Street View" style="width:100%">
+            </div>
+            <div class="historicalSlides">
+                <div class="numbertext">3 / 9</div>
+                <img src="images/historical_Bank.jpg" alt="Local Bank" style="width:100%">
+            </div>
+            <div class="historicalSlides">
+                <div class="numbertext">4 / 9</div>
+                <img src="images/historical_School.jpg" alt="Public School" style="width:100%">
+            </div>
+            <div class="historicalSlides">
+                <div class="numbertext">5 / 9</div>
+                <img src="images/historical_Cannery.jpg" alt="The Cannery" style="width:100%">
+            </div>
+            <div class="historicalSlides">
+                <div class="numbertext">6 / 9</div>
+                <img src="images/historical_FireDept.jpg" alt="Fire Dept." style="width:100%">
+            </div>
+            <div class="historicalSlides">
+                <div class="numbertext">7 / 9</div>
+                <img src="images/historical_GroupPhoto.jpg" alt="Group Photo" style="width:100%">
+            </div>
+            <div class="historicalSlides">
+                <div class="numbertext">8 / 9</div>
+                <img src="images/historical_Lock_10_2.jpg" alt="Old Lock No. 10" style="width:100%">
+            </div>
+            <div class="historicalSlides">
+                <div class="numbertext">9 / 9</div>
+                <img src="images/button_Factory.jpg" alt="Button Factory" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+        <p id="historyP2">Guttenberg incorporated in 1851. The influence of the German population was best indicated by the construction during the period between 1845 and 1865 for over one hundred stone buildings. The bluff limestone was easily obtained and good, local clay and lime for construction was available. Four large riverside warehouses opened and a large flour mill, stores, and hotels appeared during this period. The steamboat trade deposited merchandise and picked up farm produce, milled flour and lead ore.</p>
         <hr id="presentH">
         <h2>Guttenberg Today</h2>
-        <p>Guttenberg has more historic sites per capita than any other community in Northeast Iowa. The last remaining lockmaster's house on the Upper Mississippi and the Historic Lakeside Ballroom are two places of note.<br><br>Rent a boat and fish for walleye, catfish, bass species, sun fish, and many other game species in pool #10 of the Mississippi River. The Guttenberg DNR Aquarium and Fish Management Station is a great place to take children to get hands-on contact with river catfish and turtles. When not on the Mississippi River, visitors enjoy walking and biking one of the longest riverfront trails in Iowa (2.2 miles), walking on the shorter 0.3 mile Buechel Hill Trail and on the 11-acre Big Springs Nature area north of town.<br><br>Guttenberg offers boundless recreation opportunities and breathtaking views of the Mississippi River and surrounding bluffs.<br><br>
+        <p id="presentP">Guttenberg has more historic sites per capita than any other community in Northeast Iowa. The last remaining lockmaster's house on the Upper Mississippi and the Historic Lakeside Ballroom are two places of note.<br><br>Rent a boat and fish for walleye, catfish, bass species, sun fish, and many other game species in pool #10 of the Mississippi River. The Guttenberg DNR Aquarium and Fish Management Station is a great place to take children to get hands-on contact with river catfish and turtles. When not on the Mississippi River, visitors enjoy walking and biking one of the longest riverfront trails in Iowa (2.2 miles), walking on the shorter 0.3 mile Buechel Hill Trail and on the 11-acre Big Springs Nature area north of town.<br><br>Guttenberg offers boundless recreation opportunities and breathtaking views of the Mississippi River and surrounding bluffs.</p>
         <img id="image" src="images/heightmann_hill.jpg" alt="heightmann_hill" height="300px" width="500px">
         <img id="image" src="images/cityStreets.jpg" alt="River Park Drive" height="300px" width="500px">
-        <img id="image" src="images/south-Marina.jpg" alt="South Marina" height="300px" width="500px"></p>
+        <img id="image" src="images/south-Marina.jpg" alt="South Marina" height="300px" width="500px">
         <hr id="joesH">
         <h2>If your in town do not forget</h2>
         <p><img id="image" src="images/joes_banner.png" alt="Joe's Pizza Banner"><br><br>
