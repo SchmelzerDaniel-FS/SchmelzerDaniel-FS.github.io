@@ -70,6 +70,27 @@ a{
     font-size: 18px;
     margin: 30px;
 }
+#joesImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#joesP1{
+    text-align: center;
+    font-size: 18px;
+    margin: 30px;
+}
+#joesP2{
+    text-align: center;
+    font-size: 18px;
+    margin: 30px;
+}
+#joesP3{
+    text-align: center;
+    font-size: 18px;
+    margin: 30px;
+}
 p {
     text-align: center;
     color: blue;
