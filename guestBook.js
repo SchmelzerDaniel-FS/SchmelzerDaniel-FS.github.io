@@ -1,18 +1,24 @@
+// Guest Book Modal
+// Add to the array
 var x = 1;
 var array = Array();
 
 function add_element_to_array()
 {
- array[x] = document.getElementById("text1").value;
- if (array[x] == ""){
-     alert("Do not leave this blank!", "")
- }else if (array[x]!= ""){
- alert("Thank you " + array[x] + ". You have been added the Guest Book");
- x++;
- document.getElementById("text1").value = "";
- }
+  array[x] = document.getElementById("text1").value;
+  if (array[x] == ""){
+    alert("Do not leave this blank!", "")
+  }else if (array[x]!= ""){
+  alert("Thank you " + array[x] + ". You have been added the Guest Book");
+  x++;
+  document.getElementById("text1").value = "";
+  var fs = require('fs');
+  fs.writeFile("text.txt", "test")
+  }
 }
 
+// Guest Book Modal
+// Display array
 function display_array()
 {
    var e = "<hr/>";   
@@ -24,6 +30,10 @@ function display_array()
    document.getElementById("Result").innerHTML = e;
 }
 
+
+
+// Guest Book Modal
+// Modal
 var modal = document.getElementById("bookModal");
 var btn = document.getElementById("openBtn");
 var span = document.getElementsByClassName("close")[0];
@@ -39,6 +49,7 @@ window.onclick = function(event) {
   }
 }
 
+// Back to top Button
 mybutton = document.getElementById("toTop");
 
 window.onscroll = function() {scrollFunction()};
@@ -56,6 +67,7 @@ function toTopFunction() {
   document.documentElement.scrollTop = 0; 
 }
 
+// Slide show for photos
 var slideIndex = 1;
 showSlides(slideIndex);
 
